@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.5.css">
+    <script src="Javascript/bootstrap.min.5.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/jquery-3.6.0.min.js"></script>
+    <title>sign up</title>
+</head>
+
+
+<script>
+
+    function validate() {
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var pwd = $('#pwd').val();
+
+        if ((name == "" || name == null) || (email == "" || email == null) || (pwd == "" || pwd == null)) {
+            if (name == null || name == "") {
+                $('#name').css('border-color', 'red');
+                $('#name').attr('placeholder', 'Name cannot be empty');
+            }
+            else {
+                $('#name').css('border-color', 'lightgrey');
+            }
+
+
+            if (email == null || email == "") {
+                $('#email').css('border-color', 'red');
+                $('#email').attr('placeholder', 'email cannot be empty');
+            }
+            else {
+                $('#email').css('border-color', 'lightgrey');
+            }
+
+
+            if (pwd == null || pwd == "") {
+                $('#pwd').css('border-color', 'red');
+                $('#pwd').attr('placeholder', 'password cannot be empty');
+            }
+            else {
+                $('#pwd').css('border-color', 'lightgrey');
+            }
+
+            return false;
+        }
+        else {
+            alert("Registered successfull!");
+        }
+
+    }
+
+
+
+
+</script>
+
+
+
+
+<body>
+    <div class="container p-4 my-5">
+        <div class="row">
+            <div class="col-lg-6 p-4 my-3">
+                <img class="bolt" src="images/bolt1.png" width="20px">
+                <div class="form">
+                    <h2>Sign up</h2>
+                    <div class="text-secondary">See your growth and get consulting support</div>
+                    <button class="gmail btn btn-light form-control rounded-pill my-3 p-2">
+                        <img src="images/google2.png" class="google"> Sign up with Google</button>
+                    <form class="pt-3" onsubmit="return validate()">
+                        <div class="text-center my-3 email">
+                            <div class="line"><span class="p">or Sign up with Email</span></div>
+                        </div>
+                        <label>Name*</label>
+                        <input class="p-2 form-control rounded-pill" id="name" type="text" placeholder="Name"
+                            maxlength="20">
+                        <label class="pt-3">Email*</label>
+                        <input class="p-2 form-control rounded-pill" id="email" type="email"
+                            placeholder=" mail@website.com" maxlength="30">
+                        <label class="pt-3">Password*</label>
+                        <input class="p-2 form-control rounded-pill" id="pwd" type="password"
+                            placeholder=" min.8 character" minlength="8" maxlength="15">
+                        <input type="checkbox" id="check">
+                        <label class="pt-3" for="check">I agree to the <a href="#">Terms & Conditions</a></label>
+                        <input class="p-2 my-2 form-control rounded-pill" type="submit" value="Sign up">
+                        <div class="text-center"><b>Already have an Account? <a href="login.html">Sign in</a></b></div>
+                        <div class="text-center text-secondary footer">&copy; Waptrick All rights reserved</div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-6 p-0">
+                <div class="page2">
+                    <img id="background" src="images/background2.jpeg">
+                    <img class="img2" src="images/chart2.png" alt="">
+                    <div class="page21">
+                        <div class="notify1">
+                            <div class="grid-item item1 text-secondary">EMAILS</div>
+                            <div class="grid-item item2">1,723</div>
+                            <div class="grid-item item3 badge rounded-pill">BOUNCES</div>
+                        </div>
+                        <div class="notify2">
+                            <div class="grid-item item1 text-secondary">MASS EMAILS</div>
+                            <div class="grid-item item2">32</div>
+                            <div class="grid-item item3">
+                                <div class="text-warning">SPAM</div>
+                            </div>
+                        </div>
+                        <div class="pointer ">
+                            <div class="text-center pointer1">937,292</div>
+                            <div class="text-center text-secondary pointer2"><small>August</small></div>
+                        </div>
+                        <div class="avatar1">
+                            <img class="img-thumbnail rounded-pill" src="images/pic-1.png">
+                        </div>
+                        <div class="avatar2">
+                            <img class="img-thumbnail rounded-pill" src="images/pic-2.png">
+                        </div>
+                        <div class="avatar3">
+                            <img class="img-thumbnail rounded-pill" src="images/pic-3.png">
+                        </div>
+                        <div class="avatar4">
+                            <img class="img-thumbnail rounded-pill" src="images/pic-4.png">
+                        </div>
+                        <div class="over">
+                            <div class="overview ">Overview</div>
+                            <div class="clicks">Clicks</div>
+                            <div class="searches">Searches</div>
+                            <div class="increment badge rounded-pill">+22%</div>
+                        </div>
+                        <div class="intervals">
+                            <div class="from text-secondary">12.PM</div>
+                            <div class="to text-secondary">11.59.AM</div>
+                        </div>
+                        <div class="chart-footer">
+                            <div class="reports">Reports</div>
+                            <div class="report1">$23,215.22</div>
+                            <div class="report2">523 Clicks</div>
+                        </div>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="slider-container">
+                            <div class="slider-item">
+                                <h2>Turn your ideas into reality.</h2>
+                                <p>Consistent quality and experience across all platforms and devices.</p>
+                            </div>
+                            <div class="slider-item">
+                                <h2>Creativity is, quite simply,</h2>
+                                <p>A genuine interest combined with initiative.</p>
+                            </div>
+                            <div class="slider-item">
+                                <h2>It's not about ideas.</h2>
+                                <p>It's about making ideas happen</p>
+                            </div>
+                        </div>
+                        <div class="slider-indicators">
+                            <div class="slide-btn active"></div>
+                            <div class="slide-btn"></div>
+                            <div class="slide-btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = $('.slide-btn');
+        var slide = $('.slider-container');
+
+        btn[0].onclick = function () {
+            slide.css("transform", "translateX(0)");
+            for (i = 0; i < 3; i++) {
+                btn[i].classList.remove('active');
+            }
+            $(this).addClass('active');
+        };
+        btn[1].onclick = function () {
+            slide.css("transform", "translateX(-33.33%)");
+            for (i = 0; i < 3; i++) {
+                btn[i].classList.remove('active');
+            }
+            $(this).addClass('active');
+        };
+        btn[2].onclick = function () {
+            slide.css("transform", "translateX(-66.66%)");
+            for (i = 0; i < 3; i++) {
+                btn[i].classList.remove('active');
+            }
+            $(this).addClass('active');
+        };
+
+        var counter = 0;
+        setInterval(function () {
+            if (counter == 0) {
+                slide.css("transform", "translateX(0)");
+                btn[0].classList.add('active');
+                btn[1].classList.remove('active');
+                btn[2].classList.remove('active');
+            }
+            if (counter == 1) {
+                slide.css("transform", "translateX(-33.33%)");
+                btn[1].classList.add('active');
+                btn[0].classList.remove('active');
+                btn[2].classList.remove('active');
+            }
+            if (counter == 2) {
+                slide.css("transform", "translateX(-66.66%)");
+                btn[2].classList.add('active');
+                btn[0].classList.remove('active');
+                btn[1].classList.remove('active');
+            }
+            counter++;
+            if (counter > 3) {
+                counter = 0;
+            }
+        }, 3000);
+
+    </script>
+
+</body>
+
+</html>

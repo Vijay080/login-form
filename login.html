@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="Javascript/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Javascript/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+
+<script>
+
+    function validate() {
+        var email = $('#email').val();
+        var pwd = $('#pwd').val();
+
+        if ((email == "" || email == null) || (pwd == "" || pwd == null)) {
+
+            if (email == null || email == "") {
+                $('#email').css('border-color', 'red');
+                $('#email').attr('placeholder', 'email cannot be empty');
+            }
+            else {
+                $('#email').css('border-color', 'lightgrey');
+            }
+
+
+            if (pwd == null || pwd == "") {
+                $('#pwd').css('border-color', 'red');
+                $('#pwd').attr('placeholder', 'password cannot be empty');
+            }
+            else {
+                $('#pwd').css('border-color', 'lightgrey');
+            }
+
+            return false;
+        }
+        else {
+            alert("Login successfull!")
+        }
+
+
+    }
+
+
+
+
+</script>
+
+
+<body class="container">
+    <div class="row">
+        <div class="col-md-6 pg1">
+            <div class="container2">
+                <div>
+                    <img src="images/bolt1.png" style="width: 20px;">
+                </div>
+                <h3 style="font-family: poppins;">Login</h3>
+                <small>See your growth and get consulting support!</small><br><br><br>
+                <a class="btn input btn-default form-control"><img src="images/google2.png"
+                        style="width:15px;margin:0 7px;">
+                    Sign in with Google</a>
+                <br><br>
+
+                <div class="row">
+                    <div class="span"><span>or Sign in with Email</span></div>
+                </div>
+                <form onsubmit="return validate()">
+
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input class="input form-control" id="email" placeholder="mail@website.com" type="text"
+                            maxlength="30">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pwd">Password*</label>
+                        <input class="input form-control" id="pwd" type="password" placeholder="Min. 8 character"
+                            minlength="8" maxlength="15">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6"><input type="checkbox" id="rm">
+                            <label class="remember" for="rm"> Remember me</label>
+                        </div>
+                        <p class="col-xs-6 forgot" style="text-align: right;">Forget password?</p>
+                    </div>
+
+                    <button type="submit" class="btn login form-control">Login</button><br>
+                </form>
+                <div>Not registered yet? <a href="sign_up.html">Create an Account</a></div><br><br><br>
+                <footer>&copy; copyright All rights reserved.</footer>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-6 container">
+            <img class="background" src="images/background2.jpeg">
+            <div class="links">
+                <div class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="insta">
+                    <img src="images/instagram-png-transparent-1.png">
+                </div>
+                <div class="messenger">
+                    <img src="images/Facebook-Messenger-Logo.png">
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart1">
+                    <img src="images/chart1.jpg">
+                </div>
+                <div class="labels1">
+                    <span class="amt"><b>$ </b> 162,751</span>
+                    <div class="pointer">
+                        <p style="font-weight: bold;color:#3e0ba2;">$ 23,827</p>
+                        <p class="aug" style="font-size: 9px;color: #aeaeae;margin-top: -8px;">August</p>
+                    </div>
+                </div>
+                <div class="chart2">
+                    <img src="images/rewards.png">
+                </div>
+                <div class="labels2">
+                    <p class="rewards">Rewards</p>
+                    <div class="points">
+                        <p style="color: #aeaeae;">Points</p>
+                        <p style="font-weight: bold;font-size: 150%;">172,832</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="slider-container">
+                    <div class="slider-item">
+                        <h2>Turn your ideas into reality.</h2>
+                        <p>Consistent quality and experience across all platforms and devices.</p>
+                    </div>
+                    <div class="slider-item">
+                        <h2>Creativity is, quite simply,</h2>
+                        <p>A genuine interest combined with initiative.</p>
+                    </div>
+                    <div class="slider-item">
+                        <h2>It's not about ideas.</h2>
+                        <p>It's about making ideas happen</p>
+                    </div>
+                </div>
+                <div class="slider-indicators">
+                    <div class="slide-btn active"></div>
+                    <div class="slide-btn"></div>
+                    <div class="slide-btn"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var btn = $('.slide-btn');
+        var slide = $('.slider-container');
+
+        btn[0].onclick = function () {
+            slide.css("transform", "translateX(0)");
+            for (i = 0; i < 3; i++) {
+                btn[i].classList.remove('active');
+            }
+            $(this).addClass('active');
+        };
+        btn[1].onclick = function () {
+            slide.css("transform", "translateX(-33.33%)");
+            for (i = 0; i < 3; i++) {
+                btn[i].classList.remove('active');
+            }
+            $(this).addClass('active');
+        };
+        btn[2].onclick = function () {
+            slide.css("transform", "translateX(-66.66%)");
+            for (i = 0; i < 3; i++) {
+                btn[i].classList.remove('active');
+            }
+            $(this).addClass('active');
+        };
+
+        var counter = 0;
+        setInterval(function () {
+            if (counter == 0) {
+                slide.css("transform", "translateX(0)");
+                btn[0].classList.add('active');
+                btn[1].classList.remove('active');
+                btn[2].classList.remove('active');
+            }
+            if (counter == 1) {
+                slide.css("transform", "translateX(-33.33%)");
+                btn[1].classList.add('active');
+                btn[0].classList.remove('active');
+                btn[2].classList.remove('active');
+            }
+            if (counter == 2) {
+                slide.css("transform", "translateX(-66.66%)");
+                btn[2].classList.add('active');
+                btn[0].classList.remove('active');
+                btn[1].classList.remove('active');
+            }
+            counter++;
+            if (counter > 3) {
+                counter = 0;
+            }
+        }, 3000);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,596 @@
+* {
+    transition: all linear 0.1s;
+    font-family: poppins;
+    font-size: small;
+    font-weight: 700;
+}
+
+:root {
+    --blue: #4d0be8;
+    --dblue: #3405a2;
+}
+
+.google {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.gmail {
+    border: 1px solid lightgray;
+}
+
+.p {
+    background-color: white;
+    padding: 10px;
+    font-weight: normal;
+    color: #b1b1b1;
+}
+
+.email {
+    border-bottom: 1px solid lightgray;
+    line-height: 0.1rem;
+}
+
+#background {
+    object-fit: cover;
+    width: 100%;
+}
+
+body {
+    background-color: #d9d6fa;
+}
+
+.row {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    padding: 0 20%;
+}
+
+input {
+    accent-color: var(--blue);
+}
+
+input[type=submit] {
+    background-color: var(--blue);
+    color: white;
+}
+
+input[type=submit]:focus {
+    background-color: var(--blue);
+    color: white;
+}
+
+input[type=submit]:active {
+    background-color: var(--dblue);
+    color: white;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.page2 {
+    position: relative;
+}
+
+.img2 {
+    position: absolute;
+    top: 19%;
+    left: 14%;
+    width: 75%;
+}
+
+.page21 {
+    position: absolute;
+    top: 19%;
+    left: 14%;
+    width: 75%;
+    height: 40.5%;
+}
+
+.pointer {
+    position: absolute;
+    width: 17%;
+    height: 15%;
+    top: 15%;
+    right: 19.5%;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************ notify2 ******************************** */
+.notify1 {
+    position: relative;
+    width: 30%;
+    height: 25%;
+    top: -10%;
+    left: 14%;
+    background-color: white;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.notify1:hover {
+    background-color: #eeeeee;
+
+}
+
+.notify1 {
+    grid-gap: 3px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.notify1 .grid-item {
+    text-align: center;
+}
+
+.notify1 .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+    padding: 10px 0 0 15px;
+    font-size: 70%;
+}
+
+.notify1 .item2 {
+    padding: 0;
+    font-size: 170%;
+    text-align: right;
+}
+
+.notify1 .item3 {
+    height: 45%;
+    color: #6d99b6b4;
+    background-color: #c2dcf5;
+    margin-top: 7px;
+    font-size: 70%;
+}
+
+
+
+
+.notify2 {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    bottom: -15%;
+    right: 7%;
+    background-color: white;
+    grid-gap: 3px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.notify2:hover {
+    background-color: #eeeeee;
+}
+
+.notify2 .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 5% 0 0 0;
+    font-size: smaller;
+}
+
+.notify2 .grid-item {
+    text-align: center;
+}
+
+.notify2 .item2 {
+    padding: 0;
+    font-size: 200%;
+    text-align: right;
+}
+
+.notify2 .item3 {
+    line-height: 3;
+    height: 100%;
+}
+
+/*************************************************************/
+
+
+
+.chart-footer {
+    display: grid;
+    grid-template-columns: 15% auto auto auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    height: 35%;
+    background-color: transparent;
+}
+
+.chart-footer .reports {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.chart-footer .report1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-left: -3%;
+}
+
+.chart-footer .report2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.avatar1 {
+    position: absolute;
+    width: 16%;
+    left: -8%;
+    top: 50%;
+    width: 17%;
+    cursor: pointer;
+}
+
+.avatar2 {
+    position: absolute;
+    width: 16%;
+    right: -8%;
+    top: 28%;
+    cursor: pointer;
+}
+
+.avatar3 {
+    position: absolute;
+    width: 6%;
+    bottom: 16%;
+    left: 25%;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.avatar4 {
+    position: absolute;
+    width: 6%;
+    bottom: 5%;
+    left: 25%;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.bolt {
+    margin-left: 20%;
+}
+
+
+
+
+
+.over {
+    background-color: rgba(255, 0, 0, 0);
+    display: grid;
+    grid-template-columns: 35% 15% 35% 15%;
+    position: absolute;
+    width: 75%;
+    right: 2%;
+    top: 11%;
+}
+
+.clicks {
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.clicks::before {
+    content: "\2022";
+    font-size: 150%;
+    color: #6d99b6b4;
+    vertical-align: middle;
+}
+
+.searches {
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.searches::before {
+    content: "\2022";
+    font-size: 150%;
+    color: var(--blue);
+    vertical-align: middle;
+
+}
+
+.increment {
+    text-align: right;
+    font-size: 75%;
+    background-color: rgba(193, 134, 252, 0.193);
+    color: var(--blue);
+    display: inline-block;
+    width: 65%;
+    height: 70%;
+    margin-left: 40%;
+}
+
+.overview {
+    font-size: 125%;
+}
+
+
+.intervals {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 75%;
+    position: absolute;
+    right: 2%;
+    bottom: 39%;
+}
+
+.to {
+    text-align: right;
+    font-size: 75%;
+}
+
+.from {
+    font-size: 75%;
+    position: relative;
+}
+
+
+.pointer {
+    display: grid;
+    position: absolute;
+    width: 15%;
+    height: 12%;
+    top: 19%;
+    right: 20.5%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pointer:hover {
+    background-color: #eeeeee;
+}
+
+.pointer1 {
+    margin-top: 5%;
+    font-size: 90%;
+    color: var(--blue);
+}
+
+.pointer2 {
+    margin-top: -5%;
+    font-size: 75%;
+}
+
+.footer{
+    position: relative;
+    top: 100px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+
+
+.carousel-container {
+    width: 45%;
+    height: 32%;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    color: white;
+}
+
+.slider-container {
+    width: 300%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.slider-item {
+    width: 100%;
+    line-height: 2;
+    text-align: center;
+}
+
+.slider-item p {
+    font-weight: normal;
+}
+
+.slider-indicators {
+    position: absolute;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-indicators .slide-btn {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 3px;
+}
+
+.slider-indicators .slide-btn.active {
+    width: 15px;
+    background-color: #fff;
+}
+
+/*******************************************************************************/
+
+
+
+@media only screen and (max-width:1200px) and (min-width:992px) {
+    body {
+        font-size: 0.75em !important;
+    }
+
+    input.p-2, label.p-3, .btn {
+        padding: 2px !important;
+    }
+
+    .footer{
+        top: 50px;
+    }
+
+    .p {
+        font-size: 75%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    .container {
+        padding: 0;
+        margin: 2px auto;
+        height: 100%;
+    }
+
+    .notify1 .item1 {
+        font-size: 50%;
+    }
+
+    .notify1 .item2 {
+        font-size: 100%;
+    }
+
+    .notify1 .item3 {
+        font-size: 55%;
+        margin-top: 5%;
+        width: 80%;
+        height: 65%;
+
+    }
+
+    .notify2 .item1 {
+        font-size: 50%;
+    }
+
+    .notify2 .item2 {
+        font-size: 150%;
+    }
+
+    .notify2 .item3 .text-warning {
+        font-size: 75%;
+    }
+
+    .clicks {
+        font-size: 37.5%;
+    }
+
+    .searches {
+        font-size: 37.5%;
+    }
+
+    .increment {
+        text-align: right;
+        font-size: 37.5%;
+        width: 65%;
+        height: 70%;
+        margin-left: 40%;
+    }
+
+    .overview {
+        font-size: 67.5%;
+    }
+
+    .to {
+        text-align: right;
+        font-size: 37.5%;
+    }
+
+    .from {
+        font-size: 37.5%;
+    }
+
+    .pointer1 {
+        font-size: 45%;
+    }
+
+    .pointer2 {
+        font-size: 37.5%;
+    }
+
+    .slider-item {
+        font-size: 70%;
+    }
+
+    .slider-item p {
+        font-size: 75%;
+    }
+
+    .slider-indicators .slide-btn {
+        height: 4px;
+        width: 4px;
+        margin: 2px;
+    }
+
+    .slider-indicators .slide-btn.active {
+        width: 12px;
+        background-color: #fff;
+    }
+
+    .reports, .report2, .report1 {
+        font-size: 75%;
+    }
+
+    .carousel-container {
+        width: 33%;
+        height: 30%;
+        left: 35%;
+    }
+}
+
+
+@media only screen and (max-width:992px) {
+    .col-lg-6.p-4.my-3{
+        height: 80vh;
+    }
+}
